@@ -1,0 +1,10 @@
+06-11 01:12:52 [INFO] activator.windowsactivator.Controller.homeAct() - Windows Home Activation
+06-11 01:12:52 [INFO] activator.windowsactivator.Controller.runCommand() - Starting to process: cmd.exe /c slmgr /skms kms8.msguides.com
+06-11 01:12:54 [INFO] activator.windowsactivator.Controller.runCommand() - KMS Server set successfully!
+06-11 01:12:57 [INFO] activator.windowsactivator.Controller.proAct() - Windows Professional Activation
+06-11 01:12:57 [INFO] activator.windowsactivator.Controller.runCommand() - Starting to process: cmd.exe /c slmgr /ipk W269N-WFGWX-YVC9B-4J6C9-T83GX
+06-11 01:13:00 [INFO] activator.windowsactivator.Controller.runCommand() - Product key installed successfully!
+06-11 01:13:00 [INFO] activator.windowsactivator.Controller.runCommand() - Starting to process: cmd.exe /c slmgr /skms kms8.msguides.com
+06-11 01:13:02 [INFO] activator.windowsactivator.Controller.runCommand() - KMS Server set successfully!
+06-11 01:13:02 [INFO] activator.windowsactivator.Controller.runCommand() - Starting to process: cmd.exe /c slmgr /ato
+06-11 01:13:12 [INFO] activator.windowsactivator.Controller.runCommand() - Windows activated successfully

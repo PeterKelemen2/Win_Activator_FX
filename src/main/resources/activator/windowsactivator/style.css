@@ -1,0 +1,25 @@
+.button{
+    -fx-background-color: #888888;
+    -fx-text-fill: #ffffff;
+    -fx-background-radius: 7px;
+    -fx-padding: 10px;
+    -fx-min-width: 120px;
+}
+
+.button:pressed{
+    -fx-text-fill: #777777;
+}
+
+.button:hover{
+    -fx-background-color: #606060;
+}
+
+.vbox{
+    -fx-border-insets: 10;
+}
+
+.text{
+    -fx-font-size: 14px;
+}
+
+

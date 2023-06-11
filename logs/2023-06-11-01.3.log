@@ -1,0 +1,7 @@
+06-11 01:11:19 [INFO] activator.windowsactivator.Controller.proAct() - Windows Professional Activation
+06-11 01:11:19 [INFO] activator.windowsactivator.Controller.runCommand() - Starting to process: cmd.exe /c Professional
+06-11 01:11:19 [INFO] activator.windowsactivator.Controller.runCommand() - Something went wrong...
+06-11 01:11:19 [INFO] activator.windowsactivator.Controller.runCommand() - Starting to process: cmd.exe /c slmgr /skms kms8.msguides.com
+06-11 01:11:21 [INFO] activator.windowsactivator.Controller.runCommand() - KMS Server set successfully!
+06-11 01:11:21 [INFO] activator.windowsactivator.Controller.runCommand() - Starting to process: cmd.exe /c slmgr /ato
+06-11 01:11:29 [INFO] activator.windowsactivator.Controller.runCommand() - Windows activated successfully

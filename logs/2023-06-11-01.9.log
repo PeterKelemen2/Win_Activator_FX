@@ -1,0 +1,10 @@
+06-11 01:19:50 [INFO] activator.windowsactivator.Controller.deactivation() - Deactivating...
+06-11 01:19:50 [INFO] activator.windowsactivator.Controller.runCommand() - Starting to process: slmgr.vbs /upk
+06-11 01:19:53 [INFO] activator.windowsactivator.Controller.runCommand() - Windows deactivated successfully!
+06-11 01:19:54 [INFO] activator.windowsactivator.Controller.proAct() - Windows Professional Activation
+06-11 01:19:54 [INFO] activator.windowsactivator.Controller.runCommand() - Starting to process: Professional
+06-11 01:19:57 [INFO] activator.windowsactivator.Controller.runCommand() - Product key installed successfully!
+06-11 01:19:57 [INFO] activator.windowsactivator.Controller.runCommand() - Starting to process: slmgr /skms kms8.msguides.com
+06-11 01:19:58 [INFO] activator.windowsactivator.Controller.runCommand() - KMS Server set successfully!
+06-11 01:19:58 [INFO] activator.windowsactivator.Controller.runCommand() - Starting to process: slmgr /ato
+06-11 01:20:08 [INFO] activator.windowsactivator.Controller.runCommand() - Windows activated successfully!

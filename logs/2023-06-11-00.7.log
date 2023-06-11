@@ -1,0 +1,4 @@
+06-11 00:52:25 [INFO] activator.windowsactivator.Controller.deactivation() - Deactivating...
+06-11 00:52:25 [INFO] activator.windowsactivator.Controller.runCommand() - Deactivation command
+06-11 00:52:25 [INFO] activator.windowsactivator.Controller.runCommand() - Starting to process: cmd.exe /c slmgr.vbs /upk
+06-11 00:52:29 [INFO] activator.windowsactivator.Controller.runCommand() - Operation completed successfully: cmd.exe /c slmgr.vbs /upk

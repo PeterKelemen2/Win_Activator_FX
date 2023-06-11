@@ -1,0 +1,4 @@
+06-11 00:49:32 [INFO] activator.windowsactivator.Controller.homeAct() - Windows Home Activation
+06-11 00:49:32 [INFO] activator.windowsactivator.Controller.runCommand() - KMS command
+06-11 00:49:32 [INFO] activator.windowsactivator.Controller.runCommand() - Starting to process: cmd.exe /c slmgr /skms kms8.msguides.com
+06-11 00:49:34 [INFO] activator.windowsactivator.Controller.runCommand() - Operation completed successfully: cmd.exe /c slmgr /skms kms8.msguides.com

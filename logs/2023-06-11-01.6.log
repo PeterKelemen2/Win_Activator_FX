@@ -1,0 +1,10 @@
+06-11 01:17:16 [INFO] activator.windowsactivator.Controller.homeAct() - Windows Home Activation
+06-11 01:17:16 [INFO] activator.windowsactivator.Controller.runCommand() - Starting to process: Home
+06-11 01:17:20 [INFO] activator.windowsactivator.Controller.runCommand() - Something went wrong...
+06-11 01:17:20 [INFO] activator.windowsactivator.Controller.runCommand() - Starting to process: slmgr /skms kms8.msguides.com
+06-11 01:17:23 [INFO] activator.windowsactivator.Controller.runCommand() - KMS Server set successfully!
+06-11 01:17:23 [INFO] activator.windowsactivator.Controller.runCommand() - Starting to process: slmgr /ato
+06-11 01:17:36 [INFO] activator.windowsactivator.Controller.runCommand() - Windows activated successfully
+06-11 01:17:42 [INFO] activator.windowsactivator.Controller.deactivation() - Deactivating...
+06-11 01:17:42 [INFO] activator.windowsactivator.Controller.runCommand() - Starting to process: slmgr.vbs /upk
+06-11 01:17:43 [INFO] activator.windowsactivator.Controller.runCommand() - Windows deactivated successfully
