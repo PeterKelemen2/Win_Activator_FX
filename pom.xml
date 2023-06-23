@@ -55,6 +55,38 @@
     <build>
         <plugins>
             <plugin>
+                <groupId>org.panteleyev</groupId>
+                <artifactId>jpackage-maven-plugin</artifactId>
+                <version>1.4.0</version>
+                <configuration>
+                    <name>Windows-Activator</name>
+                    <appVersion>1.0.0</appVersion>
+                    <vendor>activator</vendor>
+                    <destination>target/dist</destination>
+                    <module>activator.windowsactivator/activator.windowsactivator.Main</module>
+                    <runtimeImage>target/Windows-Activator</runtimeImage>
+
+                    <javaOptions>
+                        <option>-Dfile.encoding=UTF-8</option>
+                    </javaOptions>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.openjfx</groupId>
+                <artifactId>javafx-maven-plugin</artifactId>
+                <version>0.0.5</version>
+                <configuration>
+                    <compress>2</compress>
+                    <noHeaderFiles>true</noHeaderFiles>
+                    <stripDebug>true</stripDebug>
+                    <noManPages>true</noManPages>
+                    <launcher>Windows-Activator</launcher>
+                    <mainClass>activator.windowsactivator.Main</mainClass>
+                    <jlinkImageName>Windows-Activator</jlinkImageName>
+                    <jlinkZipName>Windows-Activator</jlinkZipName>
+                </configuration>
+            </plugin>
+            <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-shade-plugin</artifactId>
                 <version>3.2.4</version>
