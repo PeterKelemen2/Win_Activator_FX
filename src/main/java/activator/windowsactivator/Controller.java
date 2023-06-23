@@ -8,9 +8,18 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Map;
 
+import javafx.scene.text.Text;
 import org.tinylog.Logger;
 
 public class Controller {
+
+    @FXML
+    public Text winvertext;
+
+    @FXML
+    public void initialize() throws IOException {
+        setWindowsVersionText();
+    }
 
     private final Map<String,String> keyMap = Map.of(
             "Home", "TX9XD-98N7V-6WMQ6-BX7FG-H8Q99",
@@ -112,6 +121,24 @@ public class Controller {
         runCommand("Professional N");
         runCommand("slmgr /skms kms8.msguides.com");
         runCommand("slmgr /ato");
+    }
+
+    @FXML
+    public void setWindowsVersionText() throws IOException {
+        String winVersion;
+        String command = "cmd.exe /c systeminfo | findstr /C:\"OS Name\" ";
+        ProcessBuilder processBuilder = new ProcessBuilder(command.split(" "));
+        Process process = processBuilder.start();
+
+        BufferedReader reader = new BufferedReader(new InputStreamReader(process.getInputStream()));
+        String line;
+        while ((line = reader.readLine()) != null) {
+            line = line.replaceAll("\\s+", " ");
+            System.out.println(line);
+            winVersion = line;
+            winVersion = winVersion.substring(19);
+            winvertext.setText("OS: " + winVersion);
+        }
     }
 
     @FXML

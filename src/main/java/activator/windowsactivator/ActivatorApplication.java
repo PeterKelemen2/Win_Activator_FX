@@ -19,6 +19,7 @@ public class ActivatorApplication extends javafx.application.Application {
         stage.setResizable(true);
         stage.setScene(scene);
         stage.getIcons().add(icon);
+
         stage.show();
     }
 

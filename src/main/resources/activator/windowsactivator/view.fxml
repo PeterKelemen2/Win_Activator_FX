@@ -9,15 +9,15 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="404.0" prefWidth="348.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="activator.windowsactivator.Controller">
+<AnchorPane prefHeight="471.0" prefWidth="348.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="activator.windowsactivator.Controller">
    <children>
-      <Rectangle arcWidth="5.0" fill="#2c2c2c" height="406.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="348.0" />
-      <ImageView fitHeight="84.0" fitWidth="83.0" layoutX="22.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+      <Rectangle arcWidth="5.0" fill="#2c2c2c" height="471.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="348.0" />
+      <ImageView fitHeight="84.0" fitWidth="83.0" layoutX="22.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../icon.png" />
          </image>
       </ImageView>
-      <VBox layoutX="31.0" layoutY="101.0" prefHeight="231.0" prefWidth="120.0" style="-fx-spacing: 20;" styleClass="vbox" stylesheets="@style.css">
+      <VBox layoutX="31.0" layoutY="166.0" prefHeight="231.0" prefWidth="120.0" style="-fx-spacing: 20;" styleClass="vbox" stylesheets="@style.css">
          <children>
             <Button mnemonicParsing="false" onAction="#homeAct" styleClass="button" stylesheets="@style.css" text="Home" />
             <Button mnemonicParsing="false" onAction="#proAct" styleClass="szines-kutya" stylesheets="@style.css" text="Professional" />
@@ -25,12 +25,12 @@
             <Button layoutX="10.0" layoutY="124.0" mnemonicParsing="false" onAction="#entAct" styleClass="szines-kutya" stylesheets="@style.css" text="Enterprise" />
          </children>
       </VBox>
-      <Text fill="WHITE" layoutX="69.0" layoutY="59.0" stroke="BLACK" strokeType="OUTSIDE" text="Windows Activator" textAlignment="CENTER">
+      <Text fill="WHITE" layoutX="69.0" layoutY="70.0" stroke="BLACK" strokeType="OUTSIDE" text="Windows Activator" textAlignment="CENTER">
          <font>
             <Font size="30.0" />
          </font>
       </Text>
-      <VBox layoutX="199.0" layoutY="101.0" prefHeight="231.0" prefWidth="120.0" style="-fx-spacing: 20;" styleClass="vbox" stylesheets="@style.css">
+      <VBox layoutX="199.0" layoutY="166.0" prefHeight="231.0" prefWidth="120.0" style="-fx-spacing: 20;" styleClass="vbox" stylesheets="@style.css">
          <children>
             <Button mnemonicParsing="false" onAction="#homeNAct" styleClass="button" stylesheets="@style.css" text="Home N" />
             <Button mnemonicParsing="false" onAction="#proNAct" styleClass="szines-kutya" stylesheets="@style.css" text="Professional N" />
@@ -38,6 +38,11 @@
             <Button layoutX="10.0" layoutY="124.0" mnemonicParsing="false" onAction="#entNAct" stylesheets="@style.css" text="Enterprise N" />
          </children>
       </VBox>
-      <Button layoutX="114.0" layoutY="340.0" mnemonicParsing="false" onAction="#deactivation" stylesheets="@style.css" text="Deactivate" />
+      <Button layoutX="114.0" layoutY="405.0" mnemonicParsing="false" onAction="#deactivation" stylesheets="@style.css" text="Deactivate" />
+      <Text fx:id="winvertext" fill="WHITE" layoutX="30.0" layoutY="132.0" strokeType="OUTSIDE" strokeWidth="0.0" text="OS: Windows 10 Pro" textAlignment="CENTER" wrappingWidth="288.13671875">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Text>
    </children>
 </AnchorPane>
