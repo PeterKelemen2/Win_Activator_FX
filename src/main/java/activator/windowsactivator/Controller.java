@@ -92,6 +92,24 @@ public class Controller {
     }
 
     @FXML
+    public void setWindowsVersionText() throws IOException {
+        String winVersion;
+        String command = "cmd.exe /c systeminfo | findstr /C:\"OS Name\" ";
+        ProcessBuilder processBuilder = new ProcessBuilder(command.split(" "));
+        Process process = processBuilder.start();
+
+        BufferedReader reader = new BufferedReader(new InputStreamReader(process.getInputStream()));
+        String line;
+        while ((line = reader.readLine()) != null) {
+            line = line.replaceAll("\\s+", " ");
+            Logger.info(line);
+            winVersion = line;
+            winVersion = winVersion.substring(19);
+            winvertext.setText("OS: " + winVersion);
+        }
+    }
+
+    @FXML
     public void homeAct() throws IOException, InterruptedException {
         Logger.info("Windows Home Activation");
         runCommand("Home");
@@ -123,23 +141,6 @@ public class Controller {
         runCommand("slmgr /ato");
     }
 
-    @FXML
-    public void setWindowsVersionText() throws IOException {
-        String winVersion;
-        String command = "cmd.exe /c systeminfo | findstr /C:\"OS Name\" ";
-        ProcessBuilder processBuilder = new ProcessBuilder(command.split(" "));
-        Process process = processBuilder.start();
-
-        BufferedReader reader = new BufferedReader(new InputStreamReader(process.getInputStream()));
-        String line;
-        while ((line = reader.readLine()) != null) {
-            line = line.replaceAll("\\s+", " ");
-            System.out.println(line);
-            winVersion = line;
-            winVersion = winVersion.substring(19);
-            winvertext.setText("OS: " + winVersion);
-        }
-    }
 
     @FXML
     public void eduAct() throws IOException, InterruptedException {
